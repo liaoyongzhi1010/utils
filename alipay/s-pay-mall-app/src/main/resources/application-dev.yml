@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  tomcat:
+    max-connections: 20
+    threads:
+      max: 20
+      min-spare: 10
+    accept-count: 10
+
+# 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
+alipay:
+  alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApUwCEXSpgsqk/w8vBBuH5SsFSUc2i3d3u2tTFRPLxzIfM9R4T5iDhjYXfSKmWyiTprq1kEA/ItuWuJP4Za/H76FfHyZ+89vYzJ5gKWfBe/04AlTnv530J7T3N1gy7TpfrlbjFqgNcoAB3yAlbdypPMhdkTKdSqI/7hnIOZlR0glI8hWd4lArqKl9vl+0USrpWFP04hBU5sdiJxcmA517H4DENzLUm1UjbsP+zGBrs/EQgKfAPIsjXdH293h2GUU1cMZkswpTaaFVzSBpJriNIPUNh4HxvvbMrlLaZmvV89C3sq60adScY4Z5eMY8Gtz856aVQ2Dzae51PaS/1VicwwIDAQAB
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml
